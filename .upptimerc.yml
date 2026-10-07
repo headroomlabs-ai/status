@@ -18,10 +18,10 @@ sites:
 status-website:
   cname: status.headroomlabs.ai
   name: Headroom Labs Status
-  logoUrl: /brand/headroom-full.png
-  favicon: /brand/headroom-logo.png
-  faviconSvg: /brand/favicon.svg
-  themeUrl: /themes/headroom.css
+  logoUrl: https://status.headroomlabs.ai/headroom-full.png
+  favicon: https://status.headroomlabs.ai/headroom-logo.png
+  faviconSvg: https://status.headroomlabs.ai/headroom-favicon.svg
+  themeUrl: https://status.headroomlabs.ai/headroom-theme.css
   links:
     - rel: preconnect
       href: https://fonts.googleapis.com
