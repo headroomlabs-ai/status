@@ -18,6 +18,15 @@ sites:
 status-website:
   cname: status.headroomlabs.ai
   name: Headroom Labs Status
+  logoUrl: /brand/headroom-full.png
+  favicon: /brand/headroom-logo.png
+  faviconSvg: /brand/favicon.svg
+  themeUrl: /themes/headroom.css
+  links:
+    - rel: preconnect
+      href: https://fonts.googleapis.com
+    - rel: stylesheet
+      href: https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap
   introTitle: "Headroom Labs service status"
   introMessage: >
     Live status of the services Headroom Labs hosts: the customer dashboard,
