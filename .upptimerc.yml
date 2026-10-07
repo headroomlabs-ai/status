@@ -1,31 +1,39 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: headroomlabs-ai
+repo: status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Customer dashboard (app.headroomlabs.ai)
+    url: https://app.headroomlabs.ai
+  - name: Website
+    url: https://www.headroomlabs.ai
+  - name: Documentation
+    url: https://docs.headroomlabs.ai/docs
+  # The ingest endpoint only accepts POST, so a GET answering 405 means the
+  # Worker is up and routing requests.
+  - name: Telemetry ingest
+    url: https://headroom-beacon.headroom-beacon.workers.dev/v1/logs
+    expectedStatusCodes:
+      - 405
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.headroomlabs.ai
+  name: Headroom Labs Status
+  introTitle: "Headroom Labs service status"
+  introMessage: >
+    Live status of the services Headroom Labs hosts: the customer dashboard,
+    website, documentation and telemetry ingest. The Headroom proxy runs inside
+    your own environment and keeps working during any outage shown here.
+    Incidents and maintenance are posted on this page.
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: Website
+      href: https://www.headroomlabs.ai
+    - title: Support
+      href: https://github.com/headroomlabs-ai/headroom/issues
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+assignees:
+  - chopratejas
+
+workflowSchedule:
+  uptime: "*/5 * * * *"
