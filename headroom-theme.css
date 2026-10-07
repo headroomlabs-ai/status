@@ -1,0 +1,57 @@
+/* Headroom brand theme (https://headroomlabs.ai/brand) for the Upptime status page. */
+:root {
+  --body-background-color: #070a0f; /* Obsidian Space */
+  --body-text-color: #ffffff;
+  --card-background-color: #0c1118; /* Midnight Panel */
+  --card-border-color: #1a2330;
+  --nav-background-color: #070a0f;
+  --nav-border-bottom-color: #1a2330;
+  --nav-current-border-bottom-color: #00f0b5; /* Headroom Mint */
+  --up-border-left-color: #00f0b5;
+  --tag-up-background-color: #00f0b5;
+  --down-border-left-color: #ff5c7a;
+  --down-background-color: #3a0f1a;
+  --tag-down-background-color: #ff5c7a;
+  --degraded-border-left-color: #f7b731;
+  --tag-degraded-background-color: #f7b731;
+  --change-background-color: #f7b731;
+  --tag-color: #070a0f;
+  --error-button-border-color: #65d8ff; /* Cyan Glow */
+  --error-button-background-color: #65d8ff;
+  --error-button-color: #070a0f;
+  --submit-button-border-color: #00f0b5;
+  --submit-button-background-color: #00f0b5;
+  --submit-button-color: #070a0f;
+  --graph-opacity: 1;
+  --graph-filter: none;
+}
+
+body {
+  font-family: "Inter", -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+nav {
+  font-family: "Google Sans Flex", "Inter", -apple-system, sans-serif;
+}
+
+a {
+  color: #65d8ff;
+}
+
+/* Secondary text in Slate Muted. */
+small,
+.small,
+p.small,
+time {
+  color: #98a4b3;
+}
+
+/* Keep the wordmark at its native aspect ratio with clear space. */
+nav img {
+  height: 28px;
+  width: auto;
+  margin: 4px 16px 4px 0;
+}
